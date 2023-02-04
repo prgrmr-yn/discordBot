@@ -23,7 +23,6 @@ const commandFiles = fs.readdirSync(commandsPath).filter(file => file.endsWith('
 for (const file of commandFiles) {
 	const filePath = path.join(commandsPath, file);
 	const command = require(filePath);
-  console.log(command.name, command);
   client.commands.set(command.name, command);
 }
 
@@ -56,8 +55,8 @@ client.on('messageCreate', msg => {
   const args = msg.content.slice(prefix.length).split(/ +/)
   const command = args.shift().toLowerCase()
 
-  if (command === 'ping') {
-    client.commands.get('ping').execute(msg, args)
+  if (command === 'checkstat') {
+    client.commands.get('checkstat').execute(msg, args)
   }else if (command === 'google') {
     msg.reply('https://www.youtube.com')
   }
