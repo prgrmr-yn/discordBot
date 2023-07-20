@@ -1,5 +1,4 @@
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-// const { token } = require('./config.json');
 require('dotenv/config')
 
 // Create a new client instance
@@ -47,10 +46,8 @@ client.on('messageCreate', msg => {
   const args = msg.content.slice(prefix.length).split(/ +/)
   const command = args.shift().toLowerCase()
 
-  if (command === 'checkstat') {
-    client.commands.get('checkstat').execute(msg, args)
-  }else if (command === 'google') {
-    msg.reply('https://www.youtube.com')
+  if (command === 'ping') {
+    client.commands.get('ping').execute(msg, args)
   }
 })
 
