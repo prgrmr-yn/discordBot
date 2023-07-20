@@ -38,16 +38,8 @@ client.on('messageCreate', msg => {
 
   if (msg.content.toLowerCase() === 'hi') {
     msg.reply('hello')
-  }else if (msg.content === 'hell') {
-    msg.reply('hi')
-  }
-
-  const m = msg.content.toLowerCase()
-  switch (m) {
-    case 'hello': msg.reply('Sup mate');  break;
-    case 'ello': msg.reply('choot');  break;
-    default:
-      break;
+  }else if (msg.content === 'ping') {
+    msg.reply('pong')
   }
 
   if (!msg.content.startsWith(prefix) || msg.author.bot) return;
