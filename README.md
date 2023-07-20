@@ -1,6 +1,5 @@
 # Discord Bot
-This is the beginner Guide to set up as a beginner
-
+This is the beginner Guide to set up the repo in their local machine and how to get started
 ## Description
 
 Discord Bot  was built using Node, and it serves as a template for a starter
@@ -26,7 +25,8 @@ Discord Bot  was built using Node, and it serves as a template for a starter
 ## Configuration
 
 1. Create a new Discord bot on the [Discord Developer Portal](https://discord.com/developers/applications).
-2. Obtain the bot token and add it to the `.env` file:
+2. You can check this [youtube video](https://www.youtube.com/watch?v=KZ3tIGHU314&t=839s&pp=ygUUY3JlYXRlIGEgZGlzY29yZCBib3Q%3D), It will inform you on how to setup.
+3. Obtain the bot token and add it to the `.env` file:
 Note: Ensure you keep the `.env` file secure and do not share it publicly.
 
 ## Usage
